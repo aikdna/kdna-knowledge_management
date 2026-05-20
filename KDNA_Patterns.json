@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "version": "0.4",
+    "domain": "knowledge_management",
+    "created": "2026-05-20",
+    "purpose": "Define terminology, common misunderstandings, and self-checks for knowledge management judgment.",
+    "load_condition": "Always load with KDNA_Core.json before evaluating knowledge bases, notes, or PKM systems."
+  },
+  "terminology": {
+    "standard_terms": [
+      {
+        "term": "knowledge asset",
+        "definition": "A unit of knowledge with four properties: core proposition, applicability boundary, counter-example, and evolution record."
+      },
+      {
+        "term": "raw material",
+        "definition": "Captured content that has not been processed into a knowledge asset — saved but not tested."
+      },
+      {
+        "term": "applicability boundary",
+        "definition": "The specific conditions under which a knowledge claim holds — and crucially, the conditions under which it breaks."
+      },
+      {
+        "term": "evolution record",
+        "definition": "A log of when a knowledge claim was formed, what situations have tested it, and how the understanding has changed over time."
+      },
+      {
+        "term": "knowledge decay",
+        "definition": "The process by which an untested knowledge claim becomes misleading as context changes around it."
+      }
+    ],
+    "banned_terms": [
+      {
+        "term": "knowledge base",
+        "why": "The term implies the collection already contains knowledge. Most 'knowledge bases' are raw material collections. Using this term without verification misleads the user about the quality of what they have.",
+        "replace_with": "collection — specify what percentage are knowledge assets vs raw material"
+      },
+      {
+        "term": "second brain",
+        "why": "It suggests passive storage is equivalent to active cognition. A second brain stores. A good knowledge system tests. The metaphor hides the processing gap.",
+        "replace_with": "describe the specific functions: capture, process, test, evolve — not a brain metaphor"
+      },
+      {
+        "term": "just capture everything",
+        "why": "Capture without processing creates the illusion of knowledge while increasing noise. The agent should never suggest capture as an end in itself.",
+        "replace_with": "capture with intent: what specific judgment will this material inform, and how will it be tested?"
+      }
+    ]
+  },
+  "misunderstandings": [
+    {
+      "id": "misread_more_notes_equals_more_knowledge",
+      "wrong": "A person with 1000 notes on a topic knows more than someone with 50 notes.",
+      "correct": "Note count measures collection effort, not knowledge quality. Fifty tested knowledge assets — each with proposition, boundary, counter-example, and evolution record — is a working knowledge system. One thousand untagged bookmarks is digital hoarding.",
+      "key_distinction": "Collection volume vs knowledge asset count. These are different dimensions.",
+      "why": "Agents default to celebrating quantity ('you have built an impressive knowledge base!') when the user needs to hear about quality gaps. This reinforces the wrong behavior."
+    },
+    {
+      "id": "misread_tags_create_structure",
+      "wrong": "A well-tagged note collection is a well-structured knowledge system.",
+      "correct": "Tags enable retrieval. They do not create knowledge structure. A note tagged #leadership and #feedback is still raw material unless it contains a proposition, boundary, counter-example, and evolution record. Tags on raw material are just colored labels on empty boxes.",
+      "key_distinction": "Tags organize containers. Knowledge structure organizes judgments. Tags cannot substitute for judgment structure.",
+      "why": "Agents often suggest tag improvements because tags are easy to optimize. But tag optimization on raw material is cosmetic. The agent should push the user to test their notes, not just label them."
+    },
+    {
+      "id": "misread_summarizing_is_processing",
+      "wrong": "Summarizing an article into your own words creates a knowledge asset.",
+      "correct": "Summarizing is translation, not processing. A summary still lacks a proposition (what do I claim based on this?), a boundary (when does this not apply?), a counter-example (what would disprove this?), and an evolution record. Processing means adding judgment to information, not restating it in different words.",
+      "key_distinction": "Summarizing = restating what was said. Processing = adding what you conclude, what you reject, and what you still need to test.",
+      "why": "Agents can summarize anything. Users feel productive when they summarize. But a folder of summaries is still raw material — it is just well-formatted raw material."
+    }
+  ],
+  "self_check": [
+    "Did I distinguish between knowledge assets and raw material before giving the user feedback on their collection?",
+    "Did I test at least one item for proposition, boundary, counter-example, and evolution record — instead of accepting it as knowledge because it is well-written?",
+    "Did I avoid praising collection volume without also noting the processing gap?",
+    "Did I avoid suggesting tag or folder reorganization as a substitute for knowledge processing?",
+    "Did I identify at least one specific item that qualifies as a knowledge asset vs raw material — with concrete reasons?"
+  ]
+}

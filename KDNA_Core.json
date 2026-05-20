@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "version": "0.4",
+    "domain": "knowledge_management",
+    "created": "2026-05-20",
+    "purpose": "Encode knowledge management judgment so AI distinguishes between raw materials, organized information, and genuine knowledge assets — and helps users identify what their knowledge base is missing.",
+    "load_condition": "Load when the user asks about organizing notes, evaluating knowledge bases, managing PKM systems, or when AI is acting on a collection of saved materials."
+  },
+  "axioms": [
+    {
+      "id": "axiom_saved_is_not_knowledge",
+      "one_sentence": "Most saved material is unprocessed raw material, not a knowledge asset.",
+      "full_statement": "A knowledge asset must have: a core proposition (what this material claims), an applicability boundary (when it does and does not apply), at least one counter-example (when it fails), and an evolution record (how the understanding changed). Most saved notes, bookmarks, and clipped articles meet zero of these criteria. They are raw material, not knowledge.",
+      "why": "Agents treating all saved content as equally valuable knowledge produce the illusion of a knowledge base while the user has only accumulated information. The agent must distinguish between collected information and processed knowledge."
+    },
+    {
+      "id": "axiom_structure_is_fidelity",
+      "one_sentence": "The structure of saved knowledge is not an organizational preference — it determines whether the knowledge can be reused.",
+      "full_statement": "A flat list of notes about 'leadership' has low reuse value regardless of how many notes exist. The structure that enables reuse includes: what scenario this knowledge applies to, what signal triggers it, what it contradicts, and what result it has produced before.",
+      "why": "Agents optimizing for 'more links' or 'better tags' are optimizing for retrieval, not for reusability. Retrieval finds the note. Reusability means the note changes the agent's judgment when found."
+    },
+    {
+      "id": "axiom_knowledge_decays",
+      "one_sentence": "Knowledge assets decay when they are not tested against new situations.",
+      "full_statement": "A knowledge asset that was accurate in one context may become misleading in another. Without an evolution record — when it was created, what situations have tested it, what counter-examples have emerged — it becomes noise dressed as insight.",
+      "why": "Agents treat static knowledge as permanently valid. Real expertise evolves through falsification, not accumulation. The agent should flag knowledge assets without an evolution record as unverified."
+    }
+  ],
+  "ontology": [
+    {
+      "id": "knowledge_asset",
+      "one_sentence": "A unit of knowledge that meets four criteria: core proposition, applicability boundary, counter-example, and evolution record.",
+      "essence": "It is not a saved web page, a highlighted passage, or a summarized concept. It is a claim about how something works — paired with when it does not work, what would prove it wrong, and how the understanding has changed over time.",
+      "boundary": "It is not a bookmark, a note, a summary, a tag collection, or a mind map. These are containers. A knowledge asset is the judgment inside the container. Most containers are empty.",
+      "trigger_signal": "The user shows a note-taking system with many items but each item is a short description, a link, or a one-sentence summary — no proposition, no boundary, no counter-example."
+    },
+    {
+      "id": "raw_material",
+      "one_sentence": "Saved content that has not been processed into a knowledge asset.",
+      "essence": "Raw material is anything the user has captured — articles, quotes, ideas, screenshots, tweets, meeting notes — that has not been tested for proposition, boundary, counter-example, and evolution.",
+      "boundary": "It is not useless. Raw material is the input to knowledge creation. But treating raw material as knowledge is the most common failure in personal knowledge management.",
+      "trigger_signal": "The user says 'I have 500 notes on this topic' but cannot articulate the core proposition or boundary of any single note."
+    }
+  ],
+  "frameworks": [
+    {
+      "id": "frame_knowledge_asset_test",
+      "name": "Knowledge Asset Test",
+      "when_to_use": "Use when evaluating whether saved content qualifies as a knowledge asset, or when helping a user turn raw material into knowledge.",
+      "steps": [
+        "Identify the core proposition: what specific claim does this content make about how something works?",
+        "Identify the boundary: under what conditions does this claim break or not apply?",
+        "Identify at least one counter-example: a real situation where following this claim would produce a worse result.",
+        "Identify the evolution record: when was this understanding formed, and how has it changed?",
+        "If any of the four is missing, classify as raw material and explain what is needed to promote it."
+      ]
+    }
+  ],
+  "core_structure": [
+    {
+      "from": "large_note_collection",
+      "to": "mostly_raw_material",
+      "via": "testing each item for proposition, boundary, counter-example, and evolution — most will fail"
+    },
+    {
+      "from": "organized_tag_system",
+      "to": "retrieval_without_reuse",
+      "via": "checking whether finding the note changes the agent's judgment or just surfaces the note"
+    },
+    {
+      "from": "static_knowledge_confidence",
+      "to": "decayed_without_notice",
+      "via": "checking for evolution record — if none exists, the knowledge may already be wrong for current context"
+    }
+  ],
+  "stances": [
+    "A small collection of tested knowledge assets is worth more than a large collection of unprocessed raw material.",
+    "When evaluating a knowledge base, count knowledge assets, not notes. If the user cannot name the proposition and boundary of a note, it is raw material.",
+    "Do not suggest better organization as a substitute for better processing. Reorganizing raw material does not create knowledge."
+  ]
+}
