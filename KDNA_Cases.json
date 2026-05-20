@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "version": "0.4",
+    "domain": "knowledge_management",
+    "created": "2026-05-20",
+    "purpose": "Cases showing the difference between surface-level PKM advice and genuine knowledge management judgment.",
+    "load_condition": "Load when user asks for examples of knowledge asset evaluation."
+  },
+  "cases": [
+    {
+      "id": "case_pkm_500_notes",
+      "title": "500 notes on leadership — almost all raw material",
+      "context": "A user has spent months capturing articles, tweets, podcast summaries, and personal reflections about leadership. They have 500 notes in Obsidian with an elaborate tag system. They ask the agent to review their system.",
+      "what_happened": "Without KDNA, the agent says: 'You have built an impressive knowledge base with excellent organization. Consider adding more backlinks.' With KDNA, the agent samples 5 notes. Four are summaries of articles (raw material). One is a personal reflection: 'When I gave clear expectations upfront, the team performed better.' But it has no boundary (when would this NOT work?), no counter-example (when did clear expectations fail?), and no evolution record. The diagnosis: 500 notes, approximately 0 knowledge assets. The tag system is excellent — for finding raw material quickly. The user needs to process, not organize.",
+      "what_was_learned": "Elaborate organization systems can mask the fact that no knowledge processing has occurred. Tags on raw material are colored labels on empty boxes. The first step to a knowledge system is turning one note into one knowledge asset — then repeating.",
+      "structural_pattern": "high_note_count → elaborate_tags → zero_knowledge_assets → organization_masks_processing_gap"
+    }
+  ]
+}

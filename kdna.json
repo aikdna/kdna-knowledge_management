@@ -12,7 +12,15 @@
   "license": {
     "type": "CC-BY-4.0"
   },
-  "keywords": ["knowledge management", "pkm", "notes", "knowledge base", "second brain", "raw material"],
+  "keywords": [
+    "knowledge management",
+    "pkm",
+    "notes",
+    "knowledge base",
+    "second brain",
+    "raw material"
+  ],
   "description": "Knowledge management judgment — distinguish knowledge assets from raw material. A saved note is not knowledge without proposition, boundary, counter-example, and evolution record.",
-  "core_insight": "Most 'knowledge bases' are raw material collections. Knowledge requires testing, not just saving."
+  "core_insight": "Most 'knowledge bases' are raw material collections. Knowledge requires testing, not just saving.",
+  "file_count": 6
 }

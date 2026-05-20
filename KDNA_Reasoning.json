@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "version": "0.4",
+    "domain": "knowledge_management",
+    "created": "2026-05-20",
+    "purpose": "Reasoning chains for knowledge management judgment — why collection is not knowledge.",
+    "load_condition": "Load when user asks why their knowledge system is not working."
+  },
+  "reasoning_chains": [
+    {
+      "id": "chain_collection_is_not_processing",
+      "one_sentence": "Saving is easy. Testing is hard. Most knowledge systems optimize for the easy part.",
+      "logic": [
+        "Capturing a note takes seconds. Testing whether the note contains a true, bounded, and applicable claim takes much longer.",
+        "Tools optimize for capture speed (quick add, browser extensions, mobile capture) because it is the habit-forming action.",
+        "The user accumulates 1000 notes and feels productive. But the notes have never been tested against a proposition, boundary, counter-example, or evolution.",
+        "The system is optimized for input velocity with zero processing throughput."
+      ],
+      "so_what": "Do not recommend capture tools or organization improvements. Recommend processing one existing note into a knowledge asset."
+    }
+  ]
+}

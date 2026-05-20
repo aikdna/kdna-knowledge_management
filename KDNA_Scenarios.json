@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "version": "0.4",
+    "domain": "knowledge_management",
+    "created": "2026-05-20",
+    "purpose": "Scenario signals for knowledge management judgment.",
+    "load_condition": "Load when user input contains signals about note-taking systems, PKM evaluation, or knowledge base review."
+  },
+  "scenes": [
+    {
+      "id": "scene_user_reviews_knowledge_base",
+      "name": "User asks agent to evaluate their note collection",
+      "trigger_signal": "User says 'I have X notes', 'review my knowledge base', 'is my PKM system good', or asks agent to read/analyze their saved notes.",
+      "sub_scenarios": [
+        {
+          "id": "sub_many_notes_no_knowledge",
+          "trap_belief": "A large collection of notes means the user has built valuable knowledge.",
+          "three_questions": {
+            "belief": "Can the user articulate the core proposition of any single note?",
+            "state": "Check: for a sample of notes, how many have a proposition, boundary, counter-example, and evolution record?",
+            "need": "Honest classification: what percentage is knowledge assets vs raw material?"
+          },
+          "action_template": "Sample 3-5 notes and apply the knowledge asset test. Report the ratio. Do not celebrate volume.",
+          "replace": "Do not say 'you have built an impressive knowledge base.' Say 'X% of sampled notes are raw material. Here is what each needs to become a knowledge asset.'",
+          "expected_result": "User stops collecting and starts processing. They see the gap between saved notes and usable knowledge."
+        }
+      ]
+    }
+  ]
+}

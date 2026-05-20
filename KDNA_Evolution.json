@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "version": "0.4",
+    "domain": "knowledge_management",
+    "created": "2026-05-20",
+    "purpose": "Capability stages for knowledge management — from collector to knowledge processor.",
+    "load_condition": "Load when user asks about improving their knowledge management practice."
+  },
+  "stages": [
+    { "id": "stage_collector", "name": "Collector", "description": "Saves everything. Measures success by note count. Has folders and tags but no processing habit.", "indicators": ["Asks 'how many notes do you have?'", "Recommends capture tools", "Praises volume"] },
+    { "id": "stage_processor", "name": "Processor", "description": "Tests individual notes for knowledge asset criteria. Can distinguish raw material from knowledge. Measures success by knowledge asset count.", "indicators": ["Tests notes for proposition/boundary/counter-example", "Distinguishes collection volume from knowledge quality", "Recommends processing one note before capturing more"] },
+    { "id": "stage_knowledge_system_builder", "name": "Knowledge System Builder", "description": "Builds systems where knowledge assets feed each other — one tested claim informs the boundary of another. Knowledge evolves through use.", "indicators": ["Connects knowledge assets across domains", "Tracks evolution records", "Uses counter-examples from one domain to test another"] }
+  ],
+  "evolution_layers": [
+    { "id": "layer_collect_to_process", "name": "From collection to processing", "capability": "Stop suggesting capture. Start testing notes for knowledge asset criteria.", "from_stage": "collector", "to_stage": "processor" }
+  ],
+  "measurement": [
+    { "id": "meas_process_over_capture", "what": "Percentage of KM advice sessions where the agent recommends processing before capturing", "how": "Review agent output for capture-first vs process-first language", "threshold": "> 90%" }
+  ]
+}
