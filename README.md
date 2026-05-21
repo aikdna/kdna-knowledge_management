@@ -10,6 +10,14 @@
 
 Most 'knowledge bases' are raw material collections. Knowledge requires testing, not just saving.
 
+## Scope
+
+This KDNA helps agents evaluate note collections, digital gardens, and PKM systems by distinguishing raw material from reusable knowledge assets.
+
+## Out of Scope
+
+This KDNA is not a note-taking app workflow, tagging taxonomy, storage strategy, Zettelkasten tutorial, or generic productivity system. It does not organize files or choose tools.
+
 ## Install
 
 ```bash
