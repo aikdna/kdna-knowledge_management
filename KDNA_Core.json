@@ -11,19 +11,67 @@
       "id": "axiom_saved_is_not_knowledge",
       "one_sentence": "Most saved material is unprocessed raw material, not a knowledge asset.",
       "full_statement": "A knowledge asset must have: a core proposition (what this material claims), an applicability boundary (when it does and does not apply), at least one counter-example (when it fails), and an evolution record (how the understanding changed). Most saved notes, bookmarks, and clipped articles meet zero of these criteria. They are raw material, not knowledge.",
-      "why": "Agents treating all saved content as equally valuable knowledge produce the illusion of a knowledge base while the user has only accumulated information. The agent must distinguish between collected information and processed knowledge."
+      "why": "Agents treating all saved content as equally valuable knowledge produce the illusion of a knowledge base while the user has only accumulated information. The agent must distinguish between collected information and processed knowledge.",
+      "applies_when": [
+        "Curating a personal knowledge management system where users bulk-import web clippings and PDFs without annotation.",
+        "Indexing a user's saved browser bookmarks and email drafts for AI retrieval and summarization.",
+        "Archiving corporate meeting recordings and slide decks intended for long-term strategic reference."
+      ],
+      "does_not_apply_when": [
+        "Storing legal contracts, tax records, or compliance logs where verbatim raw storage is legally mandated.",
+        "Maintaining reference tables, API documentation, or standard operating procedures that are authoritative and context-independent.",
+        "Archiving personal photos, voice memos, or creative drafts where the raw artifact itself holds the primary value."
+      ],
+      "failure_risk": "The agent would incorrectly strip or ignore authoritative reference documents and legal records by labeling them unprocessed, causing critical data loss or compliance failures.",
+      "confidence": "high",
+      "evidence_type": [
+        "practice_pattern",
+        "case_observation"
+      ]
     },
     {
       "id": "axiom_structure_is_fidelity",
       "one_sentence": "The structure of saved knowledge is not an organizational preference — it determines whether the knowledge can be reused.",
       "full_statement": "A flat list of notes about 'leadership' has low reuse value regardless of how many notes exist. The structure that enables reuse includes: what scenario this knowledge applies to, what signal triggers it, what it contradicts, and what result it has produced before.",
-      "why": "Agents optimizing for 'more links' or 'better tags' are optimizing for retrieval, not for reusability. Retrieval finds the note. Reusability means the note changes the agent's judgment when found."
+      "why": "Agents optimizing for 'more links' or 'better tags' are optimizing for retrieval, not for reusability. Retrieval finds the note. Reusability means the note changes the agent's judgment when found.",
+      "applies_when": [
+        "Building decision-support knowledge graphs for clinical diagnosis or engineering troubleshooting workflows.",
+        "Organizing post-mortem reports and incident responses to trigger relevant lessons during live system alerts.",
+        "Curating sales enablement playbooks that require explicit win conditions, competitor counter-moves, and boundary constraints."
+      ],
+      "does_not_apply_when": [
+        "Maintaining a corporate FAQ or technical glossary where direct keyword lookup provides complete unambiguous answers.",
+        "Storing static media assets like logos, presentation templates, or boilerplate code snippets requiring mechanical copy-paste reuse.",
+        "Archiving chronological personal journals or reflective essays where narrative flow is the sole objective."
+      ],
+      "failure_risk": "The agent would waste computational cycles forcing unnecessary scenario metadata onto exact-match reference items, degrading search performance and user trust.",
+      "confidence": "high",
+      "evidence_type": [
+        "practice_pattern",
+        "research_finding"
+      ]
     },
     {
       "id": "axiom_knowledge_decays",
       "one_sentence": "Knowledge assets decay when they are not tested against new situations.",
       "full_statement": "A knowledge asset that was accurate in one context may become misleading in another. Without an evolution record — when it was created, what situations have tested it, what counter-examples have emerged — it becomes noise dressed as insight.",
-      "why": "Agents treat static knowledge as permanently valid. Real expertise evolves through falsification, not accumulation. The agent should flag knowledge assets without an evolution record as unverified."
+      "why": "Agents treat static knowledge as permanently valid. Real expertise evolves through falsification, not accumulation. The agent should flag knowledge assets without an evolution record as unverified.",
+      "applies_when": [
+        "Managing market analysis reports, competitive intelligence briefs, or financial forecasting models.",
+        "Maintaining clinical treatment guidelines, safety protocols, or regulatory compliance frameworks.",
+        "Curating software architecture patterns and engineering best practices that shift with new frameworks and hardware."
+      ],
+      "does_not_apply_when": [
+        "Preserving historical facts, mathematical theorems, or fundamental physics laws that are empirically stable.",
+        "Storing immutable signed agreements, statutory compliance checklists, or enacted legislation text.",
+        "Archiving verified cultural heritage records, historical timelines, or standardized unit conversion charts."
+      ],
+      "failure_risk": "The agent would incorrectly downgrade immutable reference standards and historical facts as decaying or unverified, introducing unnecessary friction and discarding foundational truths.",
+      "confidence": "high",
+      "evidence_type": [
+        "research_finding",
+        "practice_pattern"
+      ]
     }
   ],
   "ontology": [

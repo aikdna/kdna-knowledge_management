@@ -53,21 +53,69 @@
       "wrong": "A person with 1000 notes on a topic knows more than someone with 50 notes.",
       "correct": "Note count measures collection effort, not knowledge quality. Fifty tested knowledge assets — each with proposition, boundary, counter-example, and evolution record — is a working knowledge system. One thousand untagged bookmarks is digital hoarding.",
       "key_distinction": "Collection volume vs knowledge asset count. These are different dimensions.",
-      "why": "Agents default to celebrating quantity ('you have built an impressive knowledge base!') when the user needs to hear about quality gaps. This reinforces the wrong behavior."
+      "why": "Agents default to celebrating quantity ('you have built an impressive knowledge base!') when the user needs to hear about quality gaps. This reinforces the wrong behavior.",
+      "applies_when": [
+        "Evaluating a user's progress in a personal knowledge management system",
+        "A user cites high note counts as proof of expertise on a topic",
+        "An AI agent assesses knowledge base maturity based on file or entry counts"
+      ],
+      "does_not_apply_when": [
+        "A researcher is in the early data collection phase requiring broad source accumulation",
+        "Building a legal or compliance archive where completeness is legally mandated",
+        "Conducting bibliometric analysis where citation volume is the primary metric"
+      ],
+      "failure_risk": "The agent will validate digital hoarding as genuine expertise and skip prompting the user to extract testable propositions or identify reasoning gaps.",
+      "confidence": "high",
+      "evidence_type": [
+        "practice_pattern",
+        "case_observation"
+      ]
     },
     {
       "id": "misread_tags_create_structure",
       "wrong": "A well-tagged note collection is a well-structured knowledge system.",
       "correct": "Tags enable retrieval. They do not create knowledge structure. A note tagged #leadership and #feedback is still raw material unless it contains a proposition, boundary, counter-example, and evolution record. Tags on raw material are just colored labels on empty boxes.",
       "key_distinction": "Tags organize containers. Knowledge structure organizes judgments. Tags cannot substitute for judgment structure.",
-      "why": "Agents often suggest tag improvements because tags are easy to optimize. But tag optimization on raw material is cosmetic. The agent should push the user to test their notes, not just label them."
+      "why": "Agents often suggest tag improvements because tags are easy to optimize. But tag optimization on raw material is cosmetic. The agent should push the user to test their notes, not just label them.",
+      "applies_when": [
+        "An AI suggests adding hierarchical tags to fix a disorganized vault",
+        "A user believes consistent tagging automatically creates a usable decision framework",
+        "Reviewing a note system that relies solely on metadata without explicit claims or boundaries"
+      ],
+      "does_not_apply_when": [
+        "Configuring automated content filtering or CRM lead segmentation",
+        "Performing taxonomic classification of external records for regulatory compliance",
+        "Building a simple keyword-search index for rapid reference lookups"
+      ],
+      "failure_risk": "The agent will recommend superficial metadata optimization instead of pushing the user to extract testable claims and boundary conditions.",
+      "confidence": "high",
+      "evidence_type": [
+        "practice_pattern",
+        "industry_consensus"
+      ]
     },
     {
       "id": "misread_summarizing_is_processing",
       "wrong": "Summarizing an article into your own words creates a knowledge asset.",
       "correct": "Summarizing is translation, not processing. A summary still lacks a proposition (what do I claim based on this?), a boundary (when does this not apply?), a counter-example (what would disprove this?), and an evolution record. Processing means adding judgment to information, not restating it in different words.",
       "key_distinction": "Summarizing = restating what was said. Processing = adding what you conclude, what you reject, and what you still need to test.",
-      "why": "Agents can summarize anything. Users feel productive when they summarize. But a folder of summaries is still raw material — it is just well-formatted raw material."
+      "why": "Agents can summarize anything. Users feel productive when they summarize. But a folder of summaries is still raw material — it is just well-formatted raw material.",
+      "applies_when": [
+        "A user pastes a long article and asks for a digest to save as a learning artifact",
+        "An AI auto-generates a summary and the user marks the note as done",
+        "Evaluating whether a saved note is ready to be cited in future strategic reasoning"
+      ],
+      "does_not_apply_when": [
+        "Creating a rapid orientation brief to decide whether to read a paper in depth",
+        "Drafting meeting minutes for factual record-keeping and accountability",
+        "Producing an executive brief where stakeholders need the original author's exact claims without the reader's interpretation"
+      ],
+      "failure_risk": "The agent will treat paraphrased content as validated insight, causing the user to base future decisions on untested restatements rather than explicit judgments.",
+      "confidence": "high",
+      "evidence_type": [
+        "case_observation",
+        "practice_pattern"
+      ]
     }
   ],
   "self_check": [

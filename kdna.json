@@ -1,7 +1,7 @@
 {
   "kdna_spec": "1.0",
   "name": "@aikdna/knowledge_management",
-  "version": "0.7.1",
+  "version": "0.7.5",
   "status": "experimental",
   "access": "open",
   "language": "en",
@@ -25,5 +25,6 @@
   "description": "Knowledge management judgment — distinguish knowledge assets from raw material. A saved note is not knowledge without proposition, boundary, counter-example, and evolution record.",
   "core_insight": "Most 'knowledge bases' are raw material collections. Knowledge requires testing, not just saving.",
   "file_count": 6,
-  "signature": "ed25519:666fc241181dbfcd2698ffcb057edbaede1d6bedbedb54b13b2aa0e78691b1b1bd2d4f5f116fd049d9032666ff17285eebb3d48b3c3d8c0550afe7a5349a3f00"
+  "judgment_version": "2026.05",
+  "signature": "ed25519:c4a51ea4752407709a261ee53fe0a396da1fd545618b363ec9bec80252e4b4c64d957e01f71322158f989da4f5cb8691abc2c39089c684ac4899150a76858f07"
 }
