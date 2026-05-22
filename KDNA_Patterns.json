@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.4",
+    "version": "1.0-rc",
     "domain": "knowledge_management",
     "created": "2026-05-20",
     "purpose": "Define terminology, common misunderstandings, and self-checks for knowledge management judgment.",
@@ -14,11 +14,11 @@
       },
       {
         "term": "raw material",
-        "definition": "Captured content that has not been processed into a knowledge asset — saved but not tested."
+        "definition": "Captured content that has not been processed into a knowledge asset \u2014 saved but not tested."
       },
       {
         "term": "applicability boundary",
-        "definition": "The specific conditions under which a knowledge claim holds — and crucially, the conditions under which it breaks."
+        "definition": "The specific conditions under which a knowledge claim holds \u2014 and crucially, the conditions under which it breaks."
       },
       {
         "term": "evolution record",
@@ -33,12 +33,12 @@
       {
         "term": "knowledge base",
         "why": "The term implies the collection already contains knowledge. Most 'knowledge bases' are raw material collections. Using this term without verification misleads the user about the quality of what they have.",
-        "replace_with": "collection — specify what percentage are knowledge assets vs raw material"
+        "replace_with": "collection \u2014 specify what percentage are knowledge assets vs raw material"
       },
       {
         "term": "second brain",
         "why": "It suggests passive storage is equivalent to active cognition. A second brain stores. A good knowledge system tests. The metaphor hides the processing gap.",
-        "replace_with": "describe the specific functions: capture, process, test, evolve — not a brain metaphor"
+        "replace_with": "describe the specific functions: capture, process, test, evolve \u2014 not a brain metaphor"
       },
       {
         "term": "just capture everything",
@@ -51,7 +51,7 @@
     {
       "id": "misread_more_notes_equals_more_knowledge",
       "wrong": "A person with 1000 notes on a topic knows more than someone with 50 notes.",
-      "correct": "Note count measures collection effort, not knowledge quality. Fifty tested knowledge assets — each with proposition, boundary, counter-example, and evolution record — is a working knowledge system. One thousand untagged bookmarks is digital hoarding.",
+      "correct": "Note count measures collection effort, not knowledge quality. Fifty tested knowledge assets \u2014 each with proposition, boundary, counter-example, and evolution record \u2014 is a working knowledge system. One thousand untagged bookmarks is digital hoarding.",
       "key_distinction": "Collection volume vs knowledge asset count. These are different dimensions.",
       "why": "Agents default to celebrating quantity ('you have built an impressive knowledge base!') when the user needs to hear about quality gaps. This reinforces the wrong behavior.",
       "applies_when": [
@@ -99,7 +99,7 @@
       "wrong": "Summarizing an article into your own words creates a knowledge asset.",
       "correct": "Summarizing is translation, not processing. A summary still lacks a proposition (what do I claim based on this?), a boundary (when does this not apply?), a counter-example (what would disprove this?), and an evolution record. Processing means adding judgment to information, not restating it in different words.",
       "key_distinction": "Summarizing = restating what was said. Processing = adding what you conclude, what you reject, and what you still need to test.",
-      "why": "Agents can summarize anything. Users feel productive when they summarize. But a folder of summaries is still raw material — it is just well-formatted raw material.",
+      "why": "Agents can summarize anything. Users feel productive when they summarize. But a folder of summaries is still raw material \u2014 it is just well-formatted raw material.",
       "applies_when": [
         "A user pastes a long article and asks for a digest to save as a learning artifact",
         "An AI auto-generates a summary and the user marks the note as done",
@@ -120,9 +120,9 @@
   ],
   "self_check": [
     "Did I distinguish between knowledge assets and raw material before giving the user feedback on their collection?",
-    "Did I test at least one item for proposition, boundary, counter-example, and evolution record — instead of accepting it as knowledge because it is well-written?",
+    "Did I test at least one item for proposition, boundary, counter-example, and evolution record \u2014 instead of accepting it as knowledge because it is well-written?",
     "Did I avoid praising collection volume without also noting the processing gap?",
     "Did I avoid suggesting tag or folder reorganization as a substitute for knowledge processing?",
-    "Did I identify at least one specific item that qualifies as a knowledge asset vs raw material — with concrete reasons?"
+    "Did I identify at least one specific item that qualifies as a knowledge asset vs raw material \u2014 with concrete reasons?"
   ]
 }

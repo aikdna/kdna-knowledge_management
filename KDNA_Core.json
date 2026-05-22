@@ -1,9 +1,9 @@
 {
   "meta": {
-    "version": "0.4",
+    "version": "1.0-rc",
     "domain": "knowledge_management",
     "created": "2026-05-20",
-    "purpose": "Encode knowledge management judgment so AI distinguishes between raw materials, organized information, and genuine knowledge assets — and helps users identify what their knowledge base is missing.",
+    "purpose": "Encode knowledge management judgment so AI distinguishes between raw materials, organized information, and genuine knowledge assets \u2014 and helps users identify what their knowledge base is missing.",
     "load_condition": "Load when the user asks about organizing notes, evaluating knowledge bases, managing PKM systems, or when AI is acting on a collection of saved materials."
   },
   "axioms": [
@@ -31,7 +31,7 @@
     },
     {
       "id": "axiom_structure_is_fidelity",
-      "one_sentence": "The structure of saved knowledge is not an organizational preference — it determines whether the knowledge can be reused.",
+      "one_sentence": "The structure of saved knowledge is not an organizational preference \u2014 it determines whether the knowledge can be reused.",
       "full_statement": "A flat list of notes about 'leadership' has low reuse value regardless of how many notes exist. The structure that enables reuse includes: what scenario this knowledge applies to, what signal triggers it, what it contradicts, and what result it has produced before.",
       "why": "Agents optimizing for 'more links' or 'better tags' are optimizing for retrieval, not for reusability. Retrieval finds the note. Reusability means the note changes the agent's judgment when found.",
       "applies_when": [
@@ -54,7 +54,7 @@
     {
       "id": "axiom_knowledge_decays",
       "one_sentence": "Knowledge assets decay when they are not tested against new situations.",
-      "full_statement": "A knowledge asset that was accurate in one context may become misleading in another. Without an evolution record — when it was created, what situations have tested it, what counter-examples have emerged — it becomes noise dressed as insight.",
+      "full_statement": "A knowledge asset that was accurate in one context may become misleading in another. Without an evolution record \u2014 when it was created, what situations have tested it, what counter-examples have emerged \u2014 it becomes noise dressed as insight.",
       "why": "Agents treat static knowledge as permanently valid. Real expertise evolves through falsification, not accumulation. The agent should flag knowledge assets without an evolution record as unverified.",
       "applies_when": [
         "Managing market analysis reports, competitive intelligence briefs, or financial forecasting models.",
@@ -78,14 +78,14 @@
     {
       "id": "knowledge_asset",
       "one_sentence": "A unit of knowledge that meets four criteria: core proposition, applicability boundary, counter-example, and evolution record.",
-      "essence": "It is not a saved web page, a highlighted passage, or a summarized concept. It is a claim about how something works — paired with when it does not work, what would prove it wrong, and how the understanding has changed over time.",
+      "essence": "It is not a saved web page, a highlighted passage, or a summarized concept. It is a claim about how something works \u2014 paired with when it does not work, what would prove it wrong, and how the understanding has changed over time.",
       "boundary": "It is not a bookmark, a note, a summary, a tag collection, or a mind map. These are containers. A knowledge asset is the judgment inside the container. Most containers are empty.",
-      "trigger_signal": "The user shows a note-taking system with many items but each item is a short description, a link, or a one-sentence summary — no proposition, no boundary, no counter-example."
+      "trigger_signal": "The user shows a note-taking system with many items but each item is a short description, a link, or a one-sentence summary \u2014 no proposition, no boundary, no counter-example."
     },
     {
       "id": "raw_material",
       "one_sentence": "Saved content that has not been processed into a knowledge asset.",
-      "essence": "Raw material is anything the user has captured — articles, quotes, ideas, screenshots, tweets, meeting notes — that has not been tested for proposition, boundary, counter-example, and evolution.",
+      "essence": "Raw material is anything the user has captured \u2014 articles, quotes, ideas, screenshots, tweets, meeting notes \u2014 that has not been tested for proposition, boundary, counter-example, and evolution.",
       "boundary": "It is not useless. Raw material is the input to knowledge creation. But treating raw material as knowledge is the most common failure in personal knowledge management.",
       "trigger_signal": "The user says 'I have 500 notes on this topic' but cannot articulate the core proposition or boundary of any single note."
     }
@@ -108,7 +108,7 @@
     {
       "from": "large_note_collection",
       "to": "mostly_raw_material",
-      "via": "testing each item for proposition, boundary, counter-example, and evolution — most will fail"
+      "via": "testing each item for proposition, boundary, counter-example, and evolution \u2014 most will fail"
     },
     {
       "from": "organized_tag_system",
@@ -118,7 +118,7 @@
     {
       "from": "static_knowledge_confidence",
       "to": "decayed_without_notice",
-      "via": "checking for evolution record — if none exists, the knowledge may already be wrong for current context"
+      "via": "checking for evolution record \u2014 if none exists, the knowledge may already be wrong for current context"
     }
   ],
   "stances": [

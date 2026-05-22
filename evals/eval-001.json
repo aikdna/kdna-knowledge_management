@@ -1,0 +1,14 @@
+{
+  "id": "eval-001",
+  "domain": "@aikdna/knowledge_management",
+  "input": "User says: 'I have 500 saved bookmarks and clipped articles on leadership. Can you help me organize my knowledge base?' None of the saved items include a core proposition, applicability boundary, counter-example, or evolution record.",
+  "expected_classification": "RAW_MATERIAL_COLLECTION",
+  "expected_axioms": [
+    "axiom_saved_is_not_knowledge",
+    "axiom_structure_is_fidelity",
+    "axiom_knowledge_decays"
+  ],
+  "output_rubric": "Agent must: (1) apply Knowledge Asset Test to classify the collection as raw material, not a knowledge base, (2) explain that each item is missing proposition, boundary, counter-example, and evolution record, (3) not suggest reorganization as a substitute for processing. Failure if agent treats bookmarks as knowledge assets or suggests just better tagging.",
+  "pass": null,
+  "evidence": ""
+}

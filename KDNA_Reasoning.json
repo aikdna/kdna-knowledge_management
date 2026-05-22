@@ -1,9 +1,9 @@
 {
   "meta": {
-    "version": "0.4",
+    "version": "1.0-rc",
     "domain": "knowledge_management",
     "created": "2026-05-20",
-    "purpose": "Reasoning chains for knowledge management judgment — why collection is not knowledge.",
+    "purpose": "Reasoning chains for knowledge management judgment \u2014 why collection is not knowledge.",
     "load_condition": "Load when user asks why their knowledge system is not working."
   },
   "reasoning_chains": [

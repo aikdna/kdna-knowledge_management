@@ -2,26 +2,29 @@
 
 # kdna-knowledge_management
 
-[![KDNA Spec](https://img.shields.io/badge/KDNA-v0.4-4c1)](https://github.com/knowledge-dna/KDNA)
+[![KDNA Spec](https://img.shields.io/badge/KDNA-v1.0--rc-4c1)](https://github.com/knowledge-dna/KDNA)
 
-**knowledge_management** — Knowledge management judgment — distinguish knowledge assets from raw material. A saved note is not knowledge without proposition, boundary, counter-example, and evolution record.
+**Knowledge Management** — Knowledge management judgment — distinguish knowledge assets from raw material. A saved note is not knowledge without proposition, boundary, counter-example, and evolution record.
 
-## Core Insight
+## Four Questions
+
+### 1. What does this domain judge?
+
+Encode knowledge management judgment so AI distinguishes between raw materials, organized information, and genuine knowledge assets — and helps users identify what their knowledge base is missing.
+
+### 2. When does it load?
+
+Load when the user asks about organizing notes, evaluating knowledge bases, managing PKM systems, or when AI is acting on a collection of saved materials.
+
+### 3. What is the core judgment?
 
 Most 'knowledge bases' are raw material collections. Knowledge requires testing, not just saving.
 
-## Scope
-
-This KDNA helps agents evaluate note collections, digital gardens, and PKM systems by distinguishing raw material from reusable knowledge assets.
-
-## Out of Scope
-
-This KDNA is not a note-taking app workflow, tagging taxonomy, storage strategy, Zettelkasten tutorial, or generic productivity system. It does not organize files or choose tools.
-
-## Install
+### 4. How do I use it?
 
 ```bash
 kdna install github:knowledge-dna/kdna-knowledge_management
+kdna validate .
 ```
 
 ## Files
@@ -35,12 +38,7 @@ kdna install github:knowledge-dna/kdna-knowledge_management
 | KDNA_Reasoning.json | Reasoning chains: conclusion → logic → so_what |
 | KDNA_Evolution.json | Capability stages, measurable indicators, growth paths |
 | kdna.json | Domain manifest |
-
-## Validate
-
-```bash
-kdna validate .
-```
+| evals/ | Evaluation cases (quality: untested) |
 
 ## License
 

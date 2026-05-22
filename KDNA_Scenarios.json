@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.4",
+    "version": "1.0-rc",
     "domain": "knowledge_management",
     "created": "2026-05-20",
     "purpose": "Scenario signals for knowledge management judgment.",
@@ -27,8 +27,14 @@
             "Explain what each raw material note needs to become a knowledge asset."
           ],
           "replace": [
-            { "avoid": "Praising note count or tag organization", "use": "Reporting the knowledge asset ratio with specific examples" },
-            { "avoid": "Suggesting more capture tools or better tagging", "use": "Recommending the user process one note into a knowledge asset before capturing more" }
+            {
+              "avoid": "Praising note count or tag organization",
+              "use": "Reporting the knowledge asset ratio with specific examples"
+            },
+            {
+              "avoid": "Suggesting more capture tools or better tagging",
+              "use": "Recommending the user process one note into a knowledge asset before capturing more"
+            }
           ],
           "expected_result": "User stops collecting and starts processing. They see the gap between saved notes and usable knowledge."
         }
