@@ -1,0 +1,1 @@
+{"locale":"zh-CN","base":"en","name":"@aikdna/knowledge_management","display_name":"知识管理判断","summary":"区分知识资产和原始材料——知识需要有命题、边界、反例和演进记录。","intended_use":["知识资产管理","知识质量评估","信息分类"],"out_of_scope":["文档管理系统","搜索引擎","数据库设计"],"known_limitations":["当前为实验阶段"],"quality_badge":"untested","review_status":"community","license":"CC-BY-4.0"}
