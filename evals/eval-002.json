@@ -1,0 +1,10 @@
+{
+  "id": "eval_knowledge_management_002",
+  "domain": "@aikdna/knowledge_management",
+  "input": "Is this wiki page knowledge or just notes?",
+  "expected_classification": "raw_material",
+  "expected_axioms": [
+    "knowledge_proposition"
+  ],
+  "output_rubric": "Agent should classify this as raw_material and apply axiom knowledge_proposition."
+}

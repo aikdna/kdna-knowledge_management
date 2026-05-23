@@ -1,0 +1,10 @@
+{
+  "id": "eval_knowledge_management_010",
+  "domain": "@aikdna/knowledge_management",
+  "input": "What's the difference between a database and a knowledge base?",
+  "expected_classification": "boundary_definition",
+  "expected_axioms": [
+    "knowledge_proposition"
+  ],
+  "output_rubric": "Agent should classify this as boundary_definition and apply axiom knowledge_proposition."
+}

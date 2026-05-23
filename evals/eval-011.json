@@ -1,0 +1,10 @@
+{
+  "id": "eval_knowledge_management_011",
+  "domain": "@aikdna/knowledge_management",
+  "input": "We capture every decision. Is that knowledge management?",
+  "expected_classification": "recording_vs_knowledge",
+  "expected_axioms": [
+    "knowledge_proposition"
+  ],
+  "output_rubric": "Agent should classify this as recording_vs_knowledge and apply axiom knowledge_proposition."
+}

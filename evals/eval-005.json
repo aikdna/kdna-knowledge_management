@@ -1,0 +1,10 @@
+{
+  "id": "eval_knowledge_management_005",
+  "domain": "@aikdna/knowledge_management",
+  "input": "Should we migrate our Google Docs to a knowledge base?",
+  "expected_classification": "format_not_knowledge",
+  "expected_axioms": [
+    "knowledge_proposition"
+  ],
+  "output_rubric": "Agent should classify this as format_not_knowledge and apply axiom knowledge_proposition."
+}

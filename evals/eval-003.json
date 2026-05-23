@@ -1,0 +1,10 @@
+{
+  "id": "eval_knowledge_management_003",
+  "domain": "@aikdna/knowledge_management",
+  "input": "We have 500 Confluence pages. Are they knowledge assets?",
+  "expected_classification": "collection_not_knowledge",
+  "expected_axioms": [
+    "knowledge_proposition"
+  ],
+  "output_rubric": "Agent should classify this as collection_not_knowledge and apply axiom knowledge_proposition."
+}

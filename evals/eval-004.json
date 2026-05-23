@@ -1,0 +1,10 @@
+{
+  "id": "eval_knowledge_management_004",
+  "domain": "@aikdna/knowledge_management",
+  "input": "How do I tell if our documentation is actual knowledge?",
+  "expected_classification": "proposition_check",
+  "expected_axioms": [
+    "knowledge_proposition"
+  ],
+  "output_rubric": "Agent should classify this as proposition_check and apply axiom knowledge_proposition."
+}

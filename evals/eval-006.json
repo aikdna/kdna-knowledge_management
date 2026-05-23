@@ -1,0 +1,10 @@
+{
+  "id": "eval_knowledge_management_006",
+  "domain": "@aikdna/knowledge_management",
+  "input": "What makes a piece of information count as knowledge?",
+  "expected_classification": "boundary_check",
+  "expected_axioms": [
+    "knowledge_proposition"
+  ],
+  "output_rubric": "Agent should classify this as boundary_check and apply axiom knowledge_proposition."
+}

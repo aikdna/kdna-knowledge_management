@@ -1,0 +1,10 @@
+{
+  "id": "eval_knowledge_management_008",
+  "domain": "@aikdna/knowledge_management",
+  "input": "How to organize 10 years of internal memos?",
+  "expected_classification": "raw_vs_curated",
+  "expected_axioms": [
+    "knowledge_proposition"
+  ],
+  "output_rubric": "Agent should classify this as raw_vs_curated and apply axiom knowledge_proposition."
+}
