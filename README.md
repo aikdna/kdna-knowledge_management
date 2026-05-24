@@ -2,7 +2,7 @@
 
 # kdna-knowledge_management
 
-[![KDNA Spec](https://img.shields.io/badge/KDNA-v1.0--rc-4c1)](https://github.com/knowledge-dna/KDNA)
+[![KDNA Spec](https://img.shields.io/badge/KDNA-v1.0--rc-4c1)](https://github.com/aikdna/KDNA)
 
 **Knowledge Management** — Knowledge management judgment — distinguish knowledge assets from raw material. A saved note is not knowledge without proposition, boundary, counter-example, and evolution record.
 
@@ -23,7 +23,7 @@ Most 'knowledge bases' are raw material collections. Knowledge requires testing,
 ### 4. How do I use it?
 
 ```bash
-kdna install github:knowledge-dna/kdna-knowledge_management
+kdna install github:aikdna/kdna-knowledge_management
 kdna validate .
 ```
 
