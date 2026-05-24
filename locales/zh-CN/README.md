@@ -18,4 +18,4 @@
 - 搜索引擎
 - 数据库设计
 
-详见英文原版：[README.md](https://github.com/knowledge-dna/kdna-knowledge_management)
+详见英文原版：[README.md](https://github.com/aikdna/kdna-knowledge_management)
