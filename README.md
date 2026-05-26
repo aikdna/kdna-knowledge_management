@@ -45,7 +45,7 @@ Most "knowledge bases" are raw material collections. Knowledge requires testing,
 
 ```bash
 kdna install @aikdna/knowledge_management
-kdna validate .
+kdna dev validate .
 ```
 
 ## Files
