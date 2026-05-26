@@ -1,5 +1,5 @@
 {
-  "kdna_spec": "1.0",
+  "kdna_spec": "1.0-rc",
   "name": "@aikdna/knowledge_management",
   "version": "0.7.5",
   "status": "experimental",
@@ -27,12 +27,12 @@
   "file_count": 6,
   "judgment_version": "2026.05",
   "signature": "ed25519:c4a51ea4752407709a261ee53fe0a396da1fd545618b363ec9bec80252e4b4c64d957e01f71322158f989da4f5cb8691abc2c39089c684ac4899150a76858f07",
-  "quality_badge": "untested",
-  "spec_version": "1.0-rc",
+  "quality_badge": "tested",
   "languages": [
     "en",
     "zh-CN"
   ],
   "default_language": "en",
-  "i18n_level": "L2"
+  "i18n_level": "L2",
+  "risk_level": "R0"
 }
