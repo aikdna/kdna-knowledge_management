@@ -1,5 +1,5 @@
 {
-  "kdna_spec": "1.0-rc",
+  "spec_version": "1.0-rc",
   "name": "@aikdna/knowledge_management",
   "version": "0.7.5",
   "status": "experimental",
